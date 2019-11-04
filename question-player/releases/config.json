@@ -1,0 +1,13 @@
+{
+  "versions": [
+    "1.0.14",
+    "1.0.15",
+    "1.0.16"
+  ],
+  "fileList": {
+    "default": {
+      "js": "leonardoPlayer.min",
+      "css": "leonardoPlayer.min"
+    }
+  }
+}
