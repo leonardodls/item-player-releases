@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Raleway:400);
 @import url(//fonts.googleapis.com/css?family=Raleway:400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 /* line 4, ../../src/sass/messenger.sass */
 ul.messenger {
   margin: 0;
@@ -17671,62 +17672,6 @@ body {
   width: 100%;
   overflow: hidden;
 }
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus {
-  height: 4px;
-  width: 100%;
-  position: absolute;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus.incorrect {
-  background-color: #eb001d;
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus.incorrect:before {
-  background-color: #eb001d;
-  content: "Incorrect";
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus.incorrect:after {
-  background-color: #eb001d;
-  content: "\C67";
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus.correct {
-  background-color: #32951B;
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus.correct:before {
-  background-color: #32951B;
-  content: "Correct";
-  width: 78px;
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus.correct:after {
-  background-color: #32951B;
-  content: "\C68";
-  margin-left: 32px;
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus:before,
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus:after {
-  display: flex;
-  align-items: center;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  box-sizing: content-box;
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus:before {
-  top: -12px;
-  height: 23px;
-  width: 85px;
-  position: absolute;
-  padding: 0 6px;
-  font-family: Arial;
-}
-.leo-widget.leo-questionwidget.leo-temp-default .leo-gradingStatus:after {
-  width: 16px;
-  height: 16px;
-  margin-left: 35px;
-  top: -9px;
-  position: absolute;
-}
 .leo-widget.leo-questionwidget.leo-temp-topdown {
   display: flex;
 }
@@ -18039,6 +17984,79 @@ body {
 }
 .leo-widget.leo-questionwidget .leo-score-floating-button .dragger:hover {
   cursor: move;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la {
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  background-color: #1b51a6;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la.incorrect {
+  background-color: #eb001d;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la.incorrect:before {
+  background-color: #eb001d;
+  content: "Incorrect";
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la.incorrect:after {
+  background-color: #eb001d;
+  content: "\C67";
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la.correct {
+  background-color: #32951B;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la.correct:before {
+  background-color: #32951B;
+  content: "Correct";
+  width: 78px;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la.correct:after {
+  background-color: #32951B;
+  content: "\C68";
+  margin-left: 32px;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la:before,
+.leo-widget.leo-questionwidget .leo-gradingStatus.la:after {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  box-sizing: content-box;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la:before {
+  top: -12px;
+  height: 23px;
+  width: 85px;
+  position: absolute;
+  padding: 0 6px;
+  font-family: Arial;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 35px;
+  top: -9px;
+  position: absolute;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus.la .leo-btn {
+  position: absolute;
+  z-index: 11;
+  right: 0;
+  top: -12px;
+  height: 28px;
+  font-family: Arial;
+  color: white;
+  background-color: #1b51a6;
+  cursor: pointer;
+  padding: 4px 11px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 0;
+  font-weight: bold;
 }
 .leo-widget.leo-presentationwidget {
   height: 100%;
@@ -18445,6 +18463,7 @@ body {
 }
 .feedbackCardContainer .feedbackTooltipContentContainer .feedbackTooltipContent {
   margin: 12px;
+  word-wrap: break-word;
 }
 .feedbackCardContainer .feedbackTooltipContentContainer .feedbackTooltipContent .icon {
   width: 16px;
@@ -18604,6 +18623,7 @@ body {
   width: calc(100% - 2px);
 }
 .l-act-player.l-centerAlign {
+  vertical-align: top;
   display: inline-block;
   width: calc(100% - 10px);
 }
@@ -18717,52 +18737,46 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   src: url(data:font/woff2;base64,d09GMgABAAAAAAoMAA8AAAAAHAQAAAmuAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCWggwCZcYCpMAj3YLJAABNgIkA0QEIAWDAweBLQyBMBtPGaOikhOZ7C8OsjllHRsGBqZSPWow3abRPpKGEvym2t3m///mxNrnAZF85ty6uzBCklkISpfuSTLjOzMnI3WAIIXeFABWrWBRckdKd3GV6ZErIPof1357t53tu1pCPJEojQYtacoM5GnpQanCSeqEZIKKST+Q7aC7e8rO4JymPyf7VccWSB7UQFhscwTF0NrEFmjE+oD+fpCVgEs+/VwZmfezl/nrkqsiOpKdCnN/Jr/AxleY/L2dvZ8sJXsEqKoIVGdlFYFQgCzrSHWqKmyti7IFQfHSwQdo8b9rX3XmJk3g75ELAXF9bqXq4wDuH336bkhP7lSFTyRILqoBAEqXaAQP1vW6OAIL0b40F8QB+XLEYyr5zXhjnbus37FxE43IqATtfeDQjTZLxBzxVdsBITVJfRbPECaMxqFlGhR7whFgqus5ORoVJtMEKGBDyJR/EXhCxX/Bn/8B8XoiGF2oWhY0xv9FAdKh7a9zCBMXv6QCFfcoxEHrvBDvthKBWkV33gVEsH9xiQKKpWxb0eqJyRIFU6yAQrNEgYtlu6fntA9bWbZ0pds168p2uXxq1jNyWuL0tZa4dpn02FgrpMfWMr1G27edtcS2q0sUBKEZnmtTIVcG1lYK9ST/Ygq2uEd6eu6gNWR5TqtPylZ9N9OUbd5FP8u7yPGZtm3TXCrF0LBnRWp6wftcoUoIADliZKNq5+S6mltkmZ7juj43y25lU/w1NivIaSxTwMbqOW1KOIPm0sH1yXZv22ewfabdWqIQi3tGrLZWn2mm8iBocTMSSDXJhpcp3HJ+hQUlVEQZVDWxGg4to4Ne0214g8Jt5DdZMMNCzEG1EmvjsDMOODXHhncp3G5+jwUvfMQbVD+xAY4gE0JYC234iMId5Y9ZiCNB4kFNEpviSDMZZLXMhs8p3Hn+goUiSqQY1DKxFY4qU0Ndq234hsLd5G9ZaKND2kHtEtvj6DMDDLXBhh8p3GP+iYUpZmQa1DkVX7iMzThIZHbC2kz5W4RjLKiJtSQjRbVAgAmBuO8OC6La1HKd8HC/ESaVS6kzVobJPywnKSklNmOGg/6JQOBMQSbpMIfFLmIAZxqBYBRQcGPxLcQbsMmVk+AxRRN0J6Lf3rlA3V/3ejvpIRSI2jkZjAXuQXFIYGNBSZXaD8ngxnVa5fDmDbC5f/0aIFy9djVwMw84O5BJ/hibrwP+0x5oG2iIunXfnkQcBw2vicBRsYtKb0E26TC0bCbIqdOmE6NvtxvtNDoNVtLbdSzf+IaG2wCnDR4Dzhy6BhLln4zqvv3iN2Ik8K0tOlHjkBgMzTYyw3l3qqJDIaxkjbNGBK1Vy2c2OgaTPwKpOBkeI0DjQzluVWhb8y8gutrsNmUNI6rZcTJg4/lvuFfh+kgI6NEmfgCVZ3UnNh18KL4dH/fEzh6mGzuzP1XRYh9R22nL3UhiJrTHN3eNTYW5dvShLYRSLRLhc7pIpiNGMV8k26VhDjvpO5mbrikRR6Kj4Dw8UIrO+hq5LwvspiJm6nvPofpqj+8i1TFjVTFE04nNv+qN7+bOTnipEU/SvSPVdStsjm80KyQ7l9MMOYjtX3dSPbxTOa2VyugtDlwEm0FI9vBdQ8QLdj37he/Nay1D5u9czeLEneakZfpkwrwZ+NIJ7OQyLpaajEj5+7EVY256iMu8unXrGDQ3PnqWnZOWlwuhRYW39c8pnXmQl/9uW+lOSsmCjrfCtLy3to68z7T1dLRFdbeCj69W8O4W3zbVRJdUOqfkp+umcF+RUHiv4Kar5HeOUNKV2eJticv5J8BFkGwbXtvKpGFYmmjAbGst1iELJUFy8dbBQfH2YPNWv/3J7X/y3xmS/A0lwXdnb3lAwr4tDYWxIvqp+XdpOe1OG1P+IaN7/6/+HkjZ/Eaxj2JyGICNEiCF9vT/3tdlibGwq9h7by8Kz7i8PLosS4If0ZrDXjbOnANufylu35E/M7uvQebbGfgu5x5EwucCdmDpwzjijOJOKOqMoDKoFk4wErnVhmNO+KmJO2ECgcBDbmCiHMzEOKhAIHgixExPkTKJbwS0G3gGJkjwAcOsqQbJW9OKD3RTxocrz3Gf8HhrIi6PzxcKsaXIVN6TioRIotR5Pc7Smxy/jzgaiOIqx+rky8tu/vIKl/tkC6FM7sqy4FmXsmrCIyIjqmsjw8Iia8FnzwQ8kVAgCE8IKUBg6y8gCgt0cgghFQ8d2lmqSAYbGYpEToi0kf5aoF2QU6Jt4Pt3pT33JBoF2QWqEe8DbYOMEwm/f1+TyAm6tbnyO4DLvKd2b+s8ftZAv2o5i5/fWs/g8d6qvwUY2qJn9m3sWf3ztrOxb2eVJz2vfh5gliUl4PFJhM9FHfaXz4IQp3NpueM9g3uV/EsGlwDeM4FgTcRtDYFwdRSPL1zj85N9hwb7C+ecne/+zcnPy6efnfx7D1R1zsW7+OcYVOf/u4d39oQTPEEGgIIWzUHAyIqUWhGr0F8DhhEEFeCa6jV4njZLIZT5LiBA6u056tQGgkDxI9ShBEaMxq+15q6VpyJpLVOgoMRm2BD2VSxuaMQzEMHEspMFwwyQbMzhK4kNPvjL2UdMxWs0EEtVj2CBPxk2yuQQJogUfJXNR/kgspCs1kkZfDFpciFD0HVC3EdpgHZlF0hZCZhIAUBLTbHUfE1qhzAOdGn9UXLMzgJ0sATgBIQLwH1LD+EIn8vD170yHgN4WGn2GnLOVGDm7HGuwCvusc+8XEunay9LV0QRmkuhUxhMmEVOGa5sS4K98jKF1C3hDA5ZqbXOEBqi/yQChAAd6j5d4o+pfhPk9JdnbSlFrWVY+j0QmkCeo2day41VDlkQjBfHia+0ij5gqt+k2u8KfcUIFF+uTo3SEgKU7gdmEMYSsTqOrYRG8eqgquF0RGqI5NNqQEDRc54GTypPR8NUnoGCj7wgpPz2BEP5/2SCIUIbFXkMclx5GD9VeQQ7W/JYjJy6O4eWS2xihnVsZAn+CVN1s3BVwvWf0K+B4fO+ZWxhdSvJq/3HQgWllE96aljPjuBsmkaOsZbNrGhmrWYJs1DxF2WRk951NWNrz8ofcxYPu8XHRqXx1I2zBG2uYF1Sxtsg4WaCc6woLZfkI6Mx3kUCBJWk4q4HfopgAAMBFjjgQQARKEhACjKQC9d8XOMSRCr00kg86Nnk5tDO1OpzOetc42JHOuxR82TIlwniQY9yexGtlf0n7v8KYZQjYbjGY+INYaO1VzEeqOgXMYcewaxIodsZr1VULaBBR1eTNJQo6QoShAwJXUrsoPDpItGCh0XnCAWBSscEAcCHEAAAAA==) format('woff2'),  url(data:font/woff;base64,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) format('woff'),  url(data:font/ttf;base64,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) format('truetype');
   /* Safari, Android, iOS */
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(./assets/fonts/fontsOpenSans-Regular.ttf);
-}
-.la-scorecard {
+.leo-scorecard {
   font-family: "Leonardo-Scorecard Font";
 }
-.fa-file-signature:before {
+.leo-file-signature:before {
   content: "\D01";
 }
-.fa-user:before {
+.leo-user:before {
   content: "\D02";
 }
-.fa-calender:before {
+.leo-calender:before {
   content: "\D05";
 }
-.fa-clock:before {
+.leo-clock:before {
   content: "\D06";
 }
-.fa-download:before {
+.leo-download:before {
   content: "\D03";
 }
-.fa-print:before {
+.leo-print:before {
   content: "\D04";
 }
-.fa-check-circle:before {
+.leo-check-circle:before {
   content: "\D08";
 }
-.fa-cross-circle:before {
+.leo-cross-circle:before {
   content: "\D13";
 }
-.fa-partial-circle:before {
+.leo-partial-circle:before {
   content: "\D07";
 }
-.fa-angle-right:before {
+.leo-angle-right:before {
   content: "\D10";
 }
-.fa-angle-down:before {
+.leo-angle-down:before {
   content: "\D11";
 }
-.fa-check:before {
+.leo-check:before {
   content: "\D12";
 }
-.fa-cross:before {
+.leo-cross:before {
   content: "\D09";
 }
 .score-card-overlay {
@@ -18780,10 +18794,11 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   width: 100%;
   border: 1px solid #cac8c8;
   border-radius: 8px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", sans-serif;
   background: #ffffff;
   position: relative;
   height: 100%;
+  box-sizing: content-box;
 }
 .score-card .scorecard-header {
   background: #ebebeb;
@@ -18798,10 +18813,10 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 .score-card .scorecard-header .scorecard-header-text {
   margin-left: 18px;
 }
-.score-card .scorecard-header .close-button {
+.score-card .scorecard-header .leo-close-button {
   float: right;
   position: relative;
-  top: 3px;
+  top: 12px;
   left: -1%;
   color: #756e6e;
   font-size: 15px;
@@ -18821,11 +18836,11 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   margin-left: 8%;
   width: 92%;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .fa-file-signature {
+.score-card .scorecard-summary .user-detail .detail-section-row .leo-file-signature {
   color: #9f9f9f;
   font-size: 20px;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .fa-user {
+.score-card .scorecard-summary .user-detail .detail-section-row .leo-user {
   color: #9f9f9f;
   font-size: 20px;
 }
@@ -18851,11 +18866,11 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   font-weight: 600;
   margin-left: 2%;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .fa-calender {
+.score-card .scorecard-summary .user-detail .detail-section-row .leo-calender {
   color: #9f9f9f;
   font-size: 20px;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .fa-clock {
+.score-card .scorecard-summary .user-detail .detail-section-row .leo-clock {
   color: #9f9f9f;
   font-size: 20px;
   margin-left: 6%;
@@ -18867,7 +18882,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   -ms-grid-columns: 135px 1fr;
       grid-template-columns: 135px 1fr;
 }
-.score-card .scorecard-summary .marks-scored-container .doughnut {
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut {
   position: relative;
   z-index: 0;
   justify-self: center;
@@ -18875,21 +18890,23 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   align-self: center;
   width: 100%;
 }
-.score-card .scorecard-summary .marks-scored-container .doughnut .marks-scored-center {
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-center {
+  height: 100%;
+  top: 0;
   position: absolute;
   text-align: center;
   z-index: -1;
   width: 100%;
 }
-.score-card .scorecard-summary .marks-scored-container .doughnut .marks-scored-center #marks-scored-center-text {
-  margin-top: -82%;
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-center #marks-scored-center-text {
+  margin-top: 23px;
 }
-.score-card .scorecard-summary .marks-scored-container .doughnut .marks-scored-center #marks-scored-center-text .marks-obtained {
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-center #marks-scored-center-text .marks-obtained {
   font-size: 36px;
   font-weight: bold;
   color: #434343;
 }
-.score-card .scorecard-summary .marks-scored-container .doughnut .marks-scored-center #marks-scored-center-text .out-Of-marks {
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-center #marks-scored-center-text .out-Of-marks {
   font-size: 14px;
   color: #8c8b8b;
 }
@@ -18909,7 +18926,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   -ms-grid-columns: 135px 1fr;
       grid-template-columns: 135px 1fr;
 }
-.score-card .scorecard-summary .cellbreak-down-container .doughnut {
+.score-card .scorecard-summary .cellbreak-down-container .leo-doughnut {
   position: relative;
   z-index: 0;
   justify-self: center;
@@ -18917,44 +18934,46 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   align-self: center;
   width: 100%;
 }
-.score-card .scorecard-summary .cellbreak-down-container .doughnut .cellbreakdown-center {
+.score-card .scorecard-summary .cellbreak-down-container .leo-doughnut .cellbreakdown-center {
+  top: 0;
+  height: 100%;
   position: absolute;
   text-align: center;
   z-index: -1;
   width: 100%;
 }
-.score-card .scorecard-summary .cellbreak-down-container .doughnut .cellbreakdown-center #cellbreakdown-center-text {
-  margin-top: -71%;
+.score-card .scorecard-summary .cellbreak-down-container .leo-doughnut .cellbreakdown-center #cellbreakdown-center-text {
+  margin-top: 41px;
   font-size: 16px;
   color: #585858;
   font-weight: 600;
 }
-.score-card .scorecard-summary .cellbreak-down-container .legends {
+.score-card .scorecard-summary .cellbreak-down-container .leo-legends {
   padding-left: 15%;
   width: 85%;
   -ms-grid-row-align: center;
   align-self: center;
   justify-self: center;
 }
-.score-card .scorecard-summary .cellbreak-down-container .legends .legend-row {
+.score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row {
   margin-top: 14px;
 }
-.score-card .scorecard-summary .cellbreak-down-container .legends .legend-row .legends-box {
+.score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row .legends-box {
   width: 20px;
   height: 20px;
   display: inline-block;
   box-shadow: 0px 0px 2px 0px black;
 }
-.score-card .scorecard-summary .cellbreak-down-container .legends .legend-row .legends-box.legend-green {
+.score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row .legends-box.legend-green {
   background: #41a034;
 }
-.score-card .scorecard-summary .cellbreak-down-container .legends .legend-row .legends-box.legend-yellow {
+.score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row .legends-box.legend-yellow {
   background: #e9eb37;
 }
-.score-card .scorecard-summary .cellbreak-down-container .legends .legend-row .legends-box.legend-red {
+.score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row .legends-box.legend-red {
   background: #df2727;
 }
-.score-card .scorecard-summary .cellbreak-down-container .legends .legend-row .legend-text {
+.score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row .legend-text {
   margin-left: 6px;
   font-size: 16px;
   color: #565656;
@@ -18980,15 +18999,15 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   max-width: 130px;
   cursor: pointer;
 }
-.score-card .scorecard-summary .button-bar .button-component .fa-download {
+.score-card .scorecard-summary .button-bar .button-component .leo-download {
   color: #606060;
   margin-left: 7%;
 }
-.score-card .scorecard-summary .button-bar .button-component .fa-print {
+.score-card .scorecard-summary .button-bar .button-component .leo-print {
   color: #606060;
   margin-left: 7%;
 }
-.score-card .scorecard-summary .button-bar .button-component .btn-text {
+.score-card .scorecard-summary .button-bar .button-component .button-text {
   margin-left: 9%;
   font-size: 16px;
   color: #5d5d5d;
@@ -19023,7 +19042,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 .score-card .scorecard-table .table-header .header-data .header-data-last-cell {
   width: auto;
 }
-.score-card .scorecard-table .rows {
+.score-card .scorecard-table .leo-rows {
   height: calc(100% - 60px);
   overflow: scroll;
   overflow-x: hidden;
@@ -19032,11 +19051,11 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   /* Handle */
   /* Handle on hover */
 }
-.score-card .scorecard-table .rows .scorecard-group {
+.score-card .scorecard-table .leo-rows .scorecard-group {
   border: 1px solid #e7e7e7;
   width: 100%;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19045,94 +19064,94 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   height: 60px;
   align-items: center;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .group-summary-row {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .group-summary-row {
   position: relative;
   left: -2%;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell {
   text-align: center;
   font-size: 16px;
   color: #333333;
   position: relative;
   width: 100%;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-first-cell {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-first-cell {
   text-align: left;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-first-cell .fa-angle-right {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-first-cell .leo-angle-right {
   color: #949494;
   margin-left: 12%;
   width: 14px;
   display: inline-block;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-first-cell .fa-angle-down {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-first-cell .leo-angle-down {
   color: #456794;
   margin-left: 12%;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-first-cell .cellID {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-first-cell .cell-reff {
   font-weight: 600;
   display: inline;
   font-size: 22px;
   color: #2e2e2e;
   margin-left: 9%;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-last-cell {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell {
   text-align: left;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-last-cell .fa-check-circle {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .leo-check-circle {
   color: #2bb930;
   margin-left: 47%;
   font-size: 20px;
   margin-top: 3px;
   position: absolute;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-last-cell .fa-cross-circle {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .leo-cross-circle {
   color: #a11919;
   margin-left: 47%;
   font-size: 20px;
   margin-top: 3px;
   position: absolute;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-last-cell .fa-partial-circle {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .leo-partial-circle {
   color: #a6a413;
   margin-left: 47%;
   font-size: 20px;
   margin-top: 3px;
   position: absolute;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-last-cell .statusText {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .status-text {
   position: relative;
   left: 57%;
   display: inline;
   font-size: 14px;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-last-cell .statusText.green_color {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .status-text.correct {
   color: #0e7212;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-last-cell .statusText.red_color {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .status-text.incorrect {
   color: #720e0e;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .cell.row-last-cell .statusText.yellow_color {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .status-text.partially-correct {
   color: #7c7c05;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary .group-details {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary .group-details {
   font-size: 18px;
   margin: 17%;
 }
-.score-card .scorecard-table .rows .scorecard-group .group-summary:hover {
+.score-card .scorecard-table .leo-rows .scorecard-group .group-summary:hover {
   background: #f3f3f3;
 }
-.score-card .scorecard-table .rows .scorecard-group .row .row-summary:hover {
+.score-card .scorecard-table .leo-rows .scorecard-group .leo-row .row-summary:hover {
   background: transparent;
 }
-.score-card .scorecard-table .rows .scorecard-group .row .row-summary .cell.row-first-cell .cellID {
+.score-card .scorecard-table .leo-rows .scorecard-group .leo-row .row-summary .cell.row-first-cell .cell-reff {
   margin-left: 30%;
 }
-.score-card .scorecard-table .rows .row {
+.score-card .scorecard-table .leo-rows .leo-row {
   border: 1px solid #e7e7e7;
   width: 100%;
 }
-.score-card .scorecard-table .rows .row .row-summary {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19141,89 +19160,90 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   height: 60px;
   align-items: center;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell {
   text-align: center;
   font-size: 16px;
   color: #333333;
   position: relative;
   width: 100%;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-first-cell {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-first-cell {
   text-align: left;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-first-cell .fa-angle-right {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-first-cell .leo-angle-right {
   color: #949494;
   margin-left: 12%;
   width: 14px;
   display: inline-block;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-first-cell .fa-angle-down {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-first-cell .leo-angle-down {
   color: #456794;
   margin-left: 12%;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-first-cell .cellID {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-first-cell .cell-reff {
   font-weight: 600;
   display: inline;
   font-size: 22px;
   color: #2e2e2e;
   margin-left: 9%;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-last-cell {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell {
   text-align: left;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-last-cell .fa-check-circle {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell .leo-check-circle {
   color: #2bb930;
   margin-left: 37%;
   font-size: 20px;
   margin-top: 3px;
   position: absolute;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-last-cell .fa-cross-circle {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell .leo-cross-circle {
   color: #a11919;
   margin-left: 37%;
   font-size: 20px;
   margin-top: 3px;
   position: absolute;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-last-cell .fa-partial-circle {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell .leo-partial-circle {
   color: #a6a413;
   margin-left: 37%;
   font-size: 20px;
   margin-top: 3px;
   position: absolute;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-last-cell .statusText {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell .status-text {
   position: relative;
   left: 47%;
   display: inline;
   font-size: 14px;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-last-cell .statusText.green_color {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell .status-text.correct {
   color: #0e7212;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-last-cell .statusText.red_color {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell .status-text.incorrect {
   color: #720e0e;
 }
-.score-card .scorecard-table .rows .row .row-summary .cell.row-last-cell .statusText.yellow_color {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell .status-text.partially-correct {
   color: #7c7c05;
 }
-.score-card .scorecard-table .rows .row .row-summary:hover {
+.score-card .scorecard-table .leo-rows .leo-row .row-summary:hover {
   background: #f3f3f3;
 }
-.score-card .scorecard-table .rows .row .row-detail {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 17px;
   align-self: center;
+  width: 100%;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-left {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left {
   width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-left .left-content {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19232,46 +19252,46 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   height: 43px;
   width: 100%;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-left .left-content .left-content-data {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data {
   text-align: center;
   font-size: 16px;
   color: #333333;
   width: 100%;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-left .left-content .left-content-data.left-content-first-cell {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data.left-content-first-cell {
   display: inline;
   text-align: left;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-left .left-content .left-content-data .left-content-cell-reference {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data .left-content-cell-reference {
   margin-left: 39%;
   display: inline;
   font-weight: 600;
   font-size: 16px;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-left .left-content .left-content-data .fa-cross-row {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data .leo-cross-row {
   color: #a11919;
   position: relative;
   top: 1px;
   margin-left: -14px;
   left: 25px;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-left .left-content .left-content-data .fa-check {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data .leo-check {
   color: #2bb930;
   position: relative;
   top: 1px;
   margin-left: -14px;
   left: 25px;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-left .left-content .left-content-data .validationText {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data .validationText {
   margin: 2px;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-right {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-right {
   width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-right .type {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-right .rule-type {
   width: 50px;
   position: absolute;
   text-align: center;
@@ -19282,18 +19302,18 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   height: 27px;
   line-height: 23px;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-right .right-content {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-right .right-content {
   display: flex;
   flex-direction: row;
   height: 43px;
   align-items: center;
 }
-.score-card .scorecard-table .rows .row .row-detail .detail-right .right-content .right-content-data {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-right .right-content .right-content-data {
   text-align: center;
   font-size: 16px;
   width: 33.3%;
 }
-.score-card .scorecard-table .rows .row .row-detail:before {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail:before {
   content: "";
   position: absolute;
   left: 0;
@@ -19302,16 +19322,16 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   width: 85%;
   border-top: 1px solid #e7e7e7;
 }
-.score-card .scorecard-table .rows::-webkit-scrollbar {
+.score-card .scorecard-table .leo-rows::-webkit-scrollbar {
   width: 5px;
 }
-.score-card .scorecard-table .rows::-webkit-scrollbar-track {
+.score-card .scorecard-table .leo-rows::-webkit-scrollbar-track {
   background: #fffff;
 }
-.score-card .scorecard-table .rows::-webkit-scrollbar-thumb {
+.score-card .scorecard-table .leo-rows::-webkit-scrollbar-thumb {
   background: #cacaca;
 }
-.score-card .scorecard-table .rows::-webkit-scrollbar-thumb:hover {
+.score-card .scorecard-table .leo-rows::-webkit-scrollbar-thumb:hover {
   background: #cacaca;
 }
 .score-card .checkbox-bar {
@@ -19321,11 +19341,11 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   line-height: 50px;
   margin-top: 1%;
 }
-.score-card .checkbox-bar .checkbox {
+.score-card .checkbox-bar .leo-checkbox {
   margin-left: 2%;
   margin-right: 1%;
 }
-.score-card .checkbox-bar .checkbox .custom-checkbox {
+.score-card .checkbox-bar .leo-checkbox .leo-checkbox-label {
   display: inline-block;
   position: relative;
   padding-left: 25px;
@@ -19337,10 +19357,10 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.score-card .checkbox-bar .checkbox .custom-checkbox input:checked ~ .checkmark:after {
+.score-card .checkbox-bar .leo-checkbox .leo-checkbox-label input:checked ~ .checkmark:after {
   display: block;
 }
-.score-card .checkbox-bar .checkbox .custom-checkbox .checkmark:after {
+.score-card .checkbox-bar .leo-checkbox .leo-checkbox-label .checkmark:after {
   left: 5px;
   width: 3px;
   height: 9px;
@@ -19348,16 +19368,16 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-.score-card .checkbox-bar .checkbox .custom-checkbox input {
+.score-card .checkbox-bar .leo-checkbox .leo-checkbox-label input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.score-card .checkbox-bar .checkbox .checkmark {
+.score-card .checkbox-bar .leo-checkbox .checkmark {
   position: absolute;
-  top: 17px;
+  top: 3px;
   left: 0;
   height: 15px;
   width: 15px;
@@ -19365,10 +19385,435 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   border: 1px solid black;
   border-radius: 3px;
 }
-.score-card .checkbox-bar .checkbox .checkmark:after {
+.score-card .checkbox-bar .leo-checkbox .checkmark:after {
   content: "";
   position: absolute;
   display: none;
+}
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: https://meyerweb.com
+	HTML5 Doctor				:: https://html5doctor.com
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+.score-card-overlay,
+.score-card {
+  /* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+  /* Responsive images and other embedded objects
+    */
+  /*
+       Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+         In fact, it *will* cause problems with Google Maps' controls at small size.
+        If this is the case for you, try uncommenting the following:
+    
+    #map img {
+            max-width: none;
+    }
+    */
+  /* force a vertical scrollbar to prevent a jumpy page */
+  /* we use a lot of ULs that aren't bulleted.
+        don't forget to restore the bullets within content. */
+  /* tables still need cellspacing="0" in the markup */
+  /* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+  /* standardize any monospaced elements */
+  /* hand cursor on clickable elements */
+  /* Webkit browsers add a 2px margin outside the chrome of form elements */
+  /* make buttons play nice in IE */
+  /* scale images in IE7 more attractively */
+  /* prevent BG image flicker upon hover
+       (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+    .ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+    */
+  /* let's clear some floats */
+}
+.score-card-overlay html,
+.score-card html,
+.score-card-overlay body,
+.score-card body,
+.score-card-overlay body div,
+.score-card body div,
+.score-card-overlay span,
+.score-card span,
+.score-card-overlay object,
+.score-card object,
+.score-card-overlay iframe,
+.score-card iframe,
+.score-card-overlay h1,
+.score-card h1,
+.score-card-overlay h2,
+.score-card h2,
+.score-card-overlay h3,
+.score-card h3,
+.score-card-overlay h4,
+.score-card h4,
+.score-card-overlay h5,
+.score-card h5,
+.score-card-overlay h6,
+.score-card h6,
+.score-card-overlay p,
+.score-card p,
+.score-card-overlay blockquote,
+.score-card blockquote,
+.score-card-overlay pre,
+.score-card pre,
+.score-card-overlay abbr,
+.score-card abbr,
+.score-card-overlay address,
+.score-card address,
+.score-card-overlay cite,
+.score-card cite,
+.score-card-overlay code,
+.score-card code,
+.score-card-overlay del,
+.score-card del,
+.score-card-overlay dfn,
+.score-card dfn,
+.score-card-overlay em,
+.score-card em,
+.score-card-overlay img,
+.score-card img,
+.score-card-overlay ins,
+.score-card ins,
+.score-card-overlay kbd,
+.score-card kbd,
+.score-card-overlay q,
+.score-card q,
+.score-card-overlay samp,
+.score-card samp,
+.score-card-overlay small,
+.score-card small,
+.score-card-overlay strong,
+.score-card strong,
+.score-card-overlay sub,
+.score-card sub,
+.score-card-overlay sup,
+.score-card sup,
+.score-card-overlay var,
+.score-card var,
+.score-card-overlay b,
+.score-card b,
+.score-card-overlay i,
+.score-card i,
+.score-card-overlay dl,
+.score-card dl,
+.score-card-overlay dt,
+.score-card dt,
+.score-card-overlay dd,
+.score-card dd,
+.score-card-overlay ol,
+.score-card ol,
+.score-card-overlay ul,
+.score-card ul,
+.score-card-overlay li,
+.score-card li,
+.score-card-overlay fieldset,
+.score-card fieldset,
+.score-card-overlay form,
+.score-card form,
+.score-card-overlay label,
+.score-card label,
+.score-card-overlay legend,
+.score-card legend,
+.score-card-overlay table,
+.score-card table,
+.score-card-overlay caption,
+.score-card caption,
+.score-card-overlay tbody,
+.score-card tbody,
+.score-card-overlay tfoot,
+.score-card tfoot,
+.score-card-overlay thead,
+.score-card thead,
+.score-card-overlay tr,
+.score-card tr,
+.score-card-overlay th,
+.score-card th,
+.score-card-overlay td,
+.score-card td,
+.score-card-overlay article,
+.score-card article,
+.score-card-overlay aside,
+.score-card aside,
+.score-card-overlay figure,
+.score-card figure,
+.score-card-overlay footer,
+.score-card footer,
+.score-card-overlay header,
+.score-card header,
+.score-card-overlay menu,
+.score-card menu,
+.score-card-overlay nav,
+.score-card nav,
+.score-card-overlay section,
+.score-card section,
+.score-card-overlay time,
+.score-card time,
+.score-card-overlay mark,
+.score-card mark,
+.score-card-overlay audio,
+.score-card audio,
+.score-card-overlay video,
+.score-card video,
+.score-card-overlay details,
+.score-card details,
+.score-card-overlay summary,
+.score-card summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  line-height: normal;
+}
+.score-card-overlay article,
+.score-card article,
+.score-card-overlay aside,
+.score-card aside,
+.score-card-overlay figure,
+.score-card figure,
+.score-card-overlay footer,
+.score-card footer,
+.score-card-overlay header,
+.score-card header,
+.score-card-overlay nav,
+.score-card nav,
+.score-card-overlay section,
+.score-card section,
+.score-card-overlay details,
+.score-card details,
+.score-card-overlay summary,
+.score-card summary {
+  display: block;
+}
+.score-card-overlay *,
+.score-card *,
+.score-card-overlay *:before,
+.score-card *:before,
+.score-card-overlay *:after,
+.score-card *:after {
+  box-sizing: inherit;
+}
+.score-card-overlay img,
+.score-card img,
+.score-card-overlay object,
+.score-card object,
+.score-card-overlay embed,
+.score-card embed {
+  max-width: 100%;
+}
+.score-card-overlay html,
+.score-card html {
+  overflow-y: scroll;
+}
+.score-card-overlay ul,
+.score-card ul {
+  list-style: none;
+}
+.score-card-overlay blockquote,
+.score-card blockquote,
+.score-card-overlay q,
+.score-card q {
+  quotes: none;
+}
+.score-card-overlay blockquote:before,
+.score-card blockquote:before,
+.score-card-overlay blockquote:after,
+.score-card blockquote:after,
+.score-card-overlay q:before,
+.score-card q:before,
+.score-card-overlay q:after,
+.score-card q:after {
+  content: '';
+  content: none;
+}
+.score-card-overlay a,
+.score-card a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.score-card-overlay del,
+.score-card del {
+  text-decoration: line-through;
+}
+.score-card-overlay abbr[title],
+.score-card abbr[title],
+.score-card-overlay dfn[title],
+.score-card dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+.score-card-overlay table,
+.score-card table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.score-card-overlay th,
+.score-card th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+.score-card-overlay td,
+.score-card td {
+  font-weight: normal;
+  vertical-align: top;
+}
+.score-card-overlay hr,
+.score-card hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+.score-card-overlay input,
+.score-card input,
+.score-card-overlay select,
+.score-card select {
+  vertical-align: middle;
+}
+.score-card-overlay pre,
+.score-card pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+.score-card-overlay input[type="radio"],
+.score-card input[type="radio"] {
+  vertical-align: text-bottom;
+}
+.score-card-overlay input[type="checkbox"],
+.score-card input[type="checkbox"] {
+  vertical-align: bottom;
+}
+.score-card-overlay .ie7 input[type="checkbox"],
+.score-card .ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+.score-card-overlay .ie6 input,
+.score-card .ie6 input {
+  vertical-align: text-bottom;
+}
+.score-card-overlay select,
+.score-card select,
+.score-card-overlay input,
+.score-card input,
+.score-card-overlay textarea,
+.score-card textarea {
+  font: 99% sans-serif;
+}
+.score-card-overlay table,
+.score-card table {
+  font-size: inherit;
+  font: 100%;
+}
+.score-card-overlay small,
+.score-card small {
+  font-size: 85%;
+}
+.score-card-overlay strong,
+.score-card strong {
+  font-weight: bold;
+}
+.score-card-overlay td,
+.score-card td,
+.score-card-overlay td img,
+.score-card td img {
+  vertical-align: top;
+}
+.score-card-overlay sub,
+.score-card sub,
+.score-card-overlay sup,
+.score-card sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+.score-card-overlay sup,
+.score-card sup {
+  top: -0.5em;
+}
+.score-card-overlay sub,
+.score-card sub {
+  bottom: -0.25em;
+}
+.score-card-overlay pre,
+.score-card pre,
+.score-card-overlay code,
+.score-card code,
+.score-card-overlay kbd,
+.score-card kbd,
+.score-card-overlay samp,
+.score-card samp {
+  font-family: monospace, sans-serif;
+}
+.score-card-overlay .clickable,
+.score-card .clickable,
+.score-card-overlay label,
+.score-card label,
+.score-card-overlay input[type=button],
+.score-card input[type=button],
+.score-card-overlay input[type=submit],
+.score-card input[type=submit],
+.score-card-overlay input[type=file],
+.score-card input[type=file],
+.score-card-overlay button,
+.score-card button {
+  cursor: pointer;
+}
+.score-card-overlay button,
+.score-card button,
+.score-card-overlay input,
+.score-card input,
+.score-card-overlay select,
+.score-card select,
+.score-card-overlay textarea,
+.score-card textarea {
+  margin: 0;
+}
+.score-card-overlay button,
+.score-card button,
+.score-card-overlay input[type=button],
+.score-card input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+.score-card-overlay .ie7 img,
+.score-card .ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+.score-card-overlay .clearfix:before,
+.score-card .clearfix:before,
+.score-card-overlay .clearfix:after,
+.score-card .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.score-card-overlay .clearfix:after,
+.score-card .clearfix:after {
+  clear: both;
+}
+.score-card-overlay .clearfix,
+.score-card .clearfix {
+  zoom: 1;
 }
 #scorecard-container {
   display: flex;
