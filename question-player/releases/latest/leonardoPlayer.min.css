@@ -18057,6 +18057,7 @@ body {
   font-size: 14px;
   border: 0;
   font-weight: bold;
+  box-sizing: border-box;
 }
 .leo-widget.leo-presentationwidget {
   height: 100%;
