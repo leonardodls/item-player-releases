@@ -17985,79 +17985,61 @@ body {
 .leo-widget.leo-questionwidget .leo-score-floating-button .dragger:hover {
   cursor: move;
 }
-.leo-widget.leo-questionwidget .leo-gradingStatus.la {
+.leo-widget.leo-questionwidget .leo-gradingStatus {
   height: 4px;
   width: 100%;
   position: absolute;
   z-index: 10;
   display: flex;
   justify-content: center;
-  background-color: #1b51a6;
+  background-color: #337ab7;
 }
-.leo-widget.leo-questionwidget .leo-gradingStatus.la.incorrect {
+.leo-widget.leo-questionwidget .leo-gradingStatus.incorrect {
   background-color: #eb001d;
 }
-.leo-widget.leo-questionwidget .leo-gradingStatus.la.incorrect:before {
-  background-color: #eb001d;
-  content: "Incorrect";
-}
-.leo-widget.leo-questionwidget .leo-gradingStatus.la.incorrect:after {
-  background-color: #eb001d;
-  content: "\C67";
-}
-.leo-widget.leo-questionwidget .leo-gradingStatus.la.correct {
+.leo-widget.leo-questionwidget .leo-gradingStatus.correct {
   background-color: #32951B;
 }
-.leo-widget.leo-questionwidget .leo-gradingStatus.la.correct:before {
-  background-color: #32951B;
-  content: "Correct";
-  width: 78px;
-}
-.leo-widget.leo-questionwidget .leo-gradingStatus.la.correct:after {
-  background-color: #32951B;
-  content: "\C68";
-  margin-left: 32px;
-}
-.leo-widget.leo-questionwidget .leo-gradingStatus.la:before,
-.leo-widget.leo-questionwidget .leo-gradingStatus.la:after {
-  display: flex;
-  align-items: center;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  box-sizing: content-box;
-}
-.leo-widget.leo-questionwidget .leo-gradingStatus.la:before {
-  top: -12px;
-  height: 23px;
-  width: 85px;
-  position: absolute;
-  padding: 0 6px;
-  font-family: Arial;
-}
-.leo-widget.leo-questionwidget .leo-gradingStatus.la:after {
-  width: 16px;
-  height: 16px;
-  margin-left: 35px;
-  top: -9px;
-  position: absolute;
-}
-.leo-widget.leo-questionwidget .leo-gradingStatus.la .leo-btn {
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn {
   position: absolute;
   z-index: 11;
-  right: 0;
-  top: -12px;
-  height: 28px;
+  top: -15px;
+  height: 26px;
   font-family: Arial;
   color: white;
-  background-color: #1b51a6;
+  background-color: inherit;
   cursor: pointer;
   padding: 4px 11px;
-  border-radius: 4px;
   font-size: 14px;
   border: 0;
   font-weight: bold;
   box-sizing: border-box;
+  line-height: normal;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn .la.incorrect:after {
+  content: "Incorrect";
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn .la.incorrect:before {
+  content: "\C67";
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn .la.correct:after {
+  content: "Correct";
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn .la.correct:before {
+  content: "\C68";
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn .la:before {
+  padding-right: 6px;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn .la:after {
+  font-family: Arial;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn .splitter {
+  border-right: 1px solid white;
+  margin: 0px 6px 0 7px;
+}
+.leo-widget.leo-questionwidget .leo-gradingStatus .leo-btn.disabled {
+  cursor: default;
 }
 .leo-widget.leo-presentationwidget {
   height: 100%;
@@ -18593,14 +18575,9 @@ body {
   box-shadow: 6px 6px 9px #ddd;
   border: 1px solid #ddd;
   box-sizing: border-box;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  max-width: calc(100% - 10px);
+  margin: 0 10px 10px 10px;
+  max-width: calc(100% - 20px);
   max-height: calc(100% - 10px);
-}
-.l-act-player.gradingStatusView {
-  margin-bottom: 0px;
-  margin-top: 13px;
 }
 .l-act-player .content-container {
   box-sizing: border-box;
@@ -18612,6 +18589,15 @@ body {
 }
 .l-act-player .content-container.l-topdownTemplate {
   overflow-y: auto;
+}
+.l-act-player.playerMinWidth1 {
+  min-width: 131px;
+}
+.l-act-player.playerMinWidth2 {
+  min-width: 235px;
+}
+.l-act-player.playerMinWidth3 {
+  min-width: 360px;
 }
 .l-act-player.defaultButtonBar .content-container {
   padding: 20px 30px 15px;
@@ -18626,7 +18612,7 @@ body {
 .l-act-player.l-centerAlign {
   vertical-align: top;
   display: inline-block;
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
 }
 .l-act-player.l-centerAlign .l-leftAlign {
   text-align: left;
@@ -18786,6 +18772,9 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   box-sizing: border-box;
   padding: 2%;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .score-card {
   -webkit-user-select: none;
@@ -18803,13 +18792,16 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 }
 .score-card .scorecard-header {
   background: #ebebeb;
-  height: 41px;
+  height: 55px;
   border-radius: 3px;
   line-height: 38px;
   font-size: 20px;
   border-bottom: 1px solid #d0d0d0;
   font-weight: 600;
   color: #343434;
+  font-size: 22px;
+  padding-top: 6px;
+  text-align: left;
 }
 .score-card .scorecard-header .scorecard-header-text {
   margin-left: 18px;
@@ -18831,49 +18823,49 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 .score-card .scorecard-summary .user-detail {
   width: 43%;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row {
-  margin-top: 11px;
-  margin-bottom: 21px;
-  margin-left: 8%;
+.score-card .scorecard-summary .user-detail .detail-section {
+  margin: 11px 0 21px 8%;
   width: 92%;
+  display: flex;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .leo-file-signature {
+.score-card .scorecard-summary .user-detail .detail-section .leo-file-signature {
   color: #9f9f9f;
-  font-size: 20px;
+  font-size: 24px;
+  padding-top: 5px;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .leo-user {
+.score-card .scorecard-summary .user-detail .detail-section .leo-user {
   color: #9f9f9f;
-  font-size: 20px;
+  font-size: 24px;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .detail-id-label {
+.score-card .scorecard-summary .user-detail .detail-section .detail-id-label {
   font-size: 22px;
   font-weight: 600;
   color: #232424;
   margin-left: 2%;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .detail-id {
+.score-card .scorecard-summary .user-detail .detail-section .detail-id {
   font-size: 22px;
   color: #232424;
   margin-left: 1%;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .Rest-details {
+.score-card .scorecard-summary .user-detail .detail-section .other-details {
   font-size: 18px;
   color: #5d5d5d;
   margin-left: 1%;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .Rest-details-lebels {
+.score-card .scorecard-summary .user-detail .detail-section .other-details-lebels {
   font-size: 18px;
   color: #5d5d5d;
   font-weight: 600;
   margin-left: 2%;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .leo-calender {
+.score-card .scorecard-summary .user-detail .detail-section .leo-calender {
   color: #9f9f9f;
-  font-size: 20px;
+  font-size: 24px;
 }
-.score-card .scorecard-summary .user-detail .detail-section-row .leo-clock {
+.score-card .scorecard-summary .user-detail .detail-section .leo-clock {
   color: #9f9f9f;
-  font-size: 20px;
+  font-size: 24px;
   margin-left: 6%;
 }
 .score-card .scorecard-summary .marks-scored-container {
@@ -18891,7 +18883,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   align-self: center;
   width: 100%;
 }
-.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-center {
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-text-container {
   height: 100%;
   top: 0;
   position: absolute;
@@ -18899,15 +18891,16 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   z-index: -1;
   width: 100%;
 }
-.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-center #marks-scored-center-text {
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-text-container #marks-scored-text {
   margin-top: 23px;
 }
-.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-center #marks-scored-center-text .marks-obtained {
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-text-container #marks-scored-text .marks-obtained {
   font-size: 36px;
   font-weight: bold;
   color: #434343;
+  font-weight: 600;
 }
-.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-center #marks-scored-center-text .out-Of-marks {
+.score-card .scorecard-summary .marks-scored-container .leo-doughnut .marks-scored-text-container #marks-scored-text .out-Of-marks {
   font-size: 14px;
   color: #8c8b8b;
 }
@@ -18915,7 +18908,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   -ms-grid-row-align: center;
   align-self: center;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 800;
   color: #585858;
   padding-left: 10%;
   width: 90%;
@@ -18958,6 +18951,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 }
 .score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row {
   margin-top: 14px;
+  display: flex;
 }
 .score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row .legends-box {
   width: 20px;
@@ -18975,7 +18969,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   background: #df2727;
 }
 .score-card .scorecard-summary .cellbreak-down-container .leo-legends .legend-row .legend-text {
-  margin-left: 6px;
+  margin-left: 10px;
   font-size: 16px;
   color: #565656;
 }
@@ -19003,10 +18997,12 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 .score-card .scorecard-summary .button-bar .button-component .leo-download {
   color: #606060;
   margin-left: 7%;
+  font-size: 16px;
 }
 .score-card .scorecard-summary .button-bar .button-component .leo-print {
   color: #606060;
   margin-left: 7%;
+  font-size: 16px;
 }
 .score-card .scorecard-summary .button-bar .button-component .button-text {
   margin-left: 9%;
@@ -19081,20 +19077,20 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 }
 .score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-first-cell .leo-angle-right {
   color: #949494;
-  margin-left: 12%;
+  margin-left: 20%;
   width: 14px;
   display: inline-block;
 }
 .score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-first-cell .leo-angle-down {
   color: #456794;
-  margin-left: 12%;
+  margin-left: 20%;
 }
 .score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-first-cell .cell-reff {
-  font-weight: 600;
+  font-weight: 800;
   display: inline;
   font-size: 22px;
   color: #2e2e2e;
-  margin-left: 9%;
+  margin-left: 5%;
 }
 .score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell {
   text-align: left;
@@ -19102,21 +19098,21 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 .score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .leo-check-circle {
   color: #2bb930;
   margin-left: 47%;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 3px;
   position: absolute;
 }
 .score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .leo-cross-circle {
   color: #a11919;
   margin-left: 47%;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 3px;
   position: absolute;
 }
 .score-card .scorecard-table .leo-rows .scorecard-group .group-summary .leo-cell.row-last-cell .leo-partial-circle {
   color: #a6a413;
   margin-left: 47%;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 3px;
   position: absolute;
 }
@@ -19173,20 +19169,20 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 }
 .score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-first-cell .leo-angle-right {
   color: #949494;
-  margin-left: 12%;
+  margin-left: 20%;
   width: 14px;
   display: inline-block;
 }
 .score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-first-cell .leo-angle-down {
   color: #456794;
-  margin-left: 12%;
+  margin-left: 20%;
 }
 .score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-first-cell .cell-reff {
   font-weight: 600;
   display: inline;
   font-size: 22px;
   color: #2e2e2e;
-  margin-left: 9%;
+  margin-left: 5%;
 }
 .score-card .scorecard-table .leo-rows .leo-row .row-summary .leo-cell.row-last-cell {
   text-align: left;
@@ -19283,7 +19279,10 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   margin-left: -14px;
   left: 25px;
 }
-.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data .validationText {
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data .leo-no-margin {
+  left: 0;
+}
+.score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-left .left-content .left-content-data .validation-text {
   margin: 2px;
 }
 .score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-right {
@@ -19302,6 +19301,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   color: #333333;
   height: 27px;
   line-height: 23px;
+  font-weight: 600;
 }
 .score-card .scorecard-table .leo-rows .leo-row .row-detail .detail-right .right-content {
   display: flex;
@@ -19319,8 +19319,8 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   position: absolute;
   left: 0;
   height: 1px;
-  margin-left: 6%;
-  width: 85%;
+  margin-left: 5%;
+  width: 83%;
   border-top: 1px solid #e7e7e7;
 }
 .score-card .scorecard-table .leo-rows::-webkit-scrollbar {
@@ -19358,13 +19358,12 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.score-card .checkbox-bar .leo-checkbox .leo-checkbox-label input:checked ~ .checkmark:after {
-  display: block;
-}
-.score-card .checkbox-bar .leo-checkbox .leo-checkbox-label .checkmark:after {
-  left: 5px;
-  width: 3px;
-  height: 9px;
+.score-card .checkbox-bar .leo-checkbox .leo-checkbox-label .show-checkmark:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  width: 6px;
+  height: 10px;
   border: solid #456794;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
@@ -19376,7 +19375,7 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   height: 0;
   width: 0;
 }
-.score-card .checkbox-bar .leo-checkbox .checkmark {
+.score-card .checkbox-bar .leo-checkbox .hide-checkmark {
   position: absolute;
   top: 3px;
   left: 0;
@@ -19386,10 +19385,15 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   border: 1px solid black;
   border-radius: 3px;
 }
-.score-card .checkbox-bar .leo-checkbox .checkmark:after {
-  content: "";
+.score-card .checkbox-bar .leo-checkbox .show-checkmark {
   position: absolute;
-  display: none;
+  top: 3px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 /*
 	HTML5 Reset :: style.css
