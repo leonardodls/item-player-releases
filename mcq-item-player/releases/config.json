@@ -4,8 +4,8 @@
   ],
   "fileList": {
     "default": {
-      "js": ["item-renderer-chunk1","item-renderer-chunk2"],
-      "css": ["item-renderer-chunk1","item-renderer-chunk2"]
+      "js": "mcqplayer.min",
+      "css": "mcqplayer.min"
     }
   }
 }
