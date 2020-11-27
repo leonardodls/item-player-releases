@@ -42,7 +42,8 @@
   "0.11.0-showAnswer.2",
   "0.12.0-grader0.3.26InRuleMatchingRules.11",
   "0.12.0-grader0.3.26InRuleMatchingRules.13",
-  "0.13.0"
+  "0.13.0",
+  "0.13.0-newScorecard"
   ],
   "fileList": {
     "default": {
