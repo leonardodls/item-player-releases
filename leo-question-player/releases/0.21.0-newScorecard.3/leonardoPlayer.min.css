@@ -20156,13 +20156,19 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   left: 0;
 }
 .score-card2 .summary-band-container .manage-details {
-  cursor: pointer;
   font-size: 14px;
-  text-align: end;
   padding: 12px;
+  display: flex;
+  justify-content: flex-end;
 }
 .score-card2 .summary-band-container .manage-details .label-container {
+  cursor: pointer;
   color: #7171d1;
+  display: flex;
+  align-items: center;
+}
+.score-card2 .summary-band-container .manage-details .label-container .icon-label {
+  margin-top: 2px;
 }
 .score-card2 .summary-band-container .manage-details .label-container .leo-expand-icon {
   font-size: 20px;
@@ -20507,10 +20513,12 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 .score-card2 .leo-table .grid-row .grid-row-score-cell .expand-button-container .leo-plus-icon {
   color: #6495ed;
   font-size: 20px;
+  cursor: pointer;
 }
 .score-card2 .leo-table .grid-row .grid-row-score-cell .expand-button-container .leo-minus-icon {
   color: #6495ed;
   font-size: 20px;
+  cursor: pointer;
 }
 .score-card2 .leo-table .grid-row .leo-empty-score-cell {
   position: -webkit-sticky;
@@ -20585,7 +20593,6 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
 }
 .score-card2 .leo-table .grid-row .rules-detail-container .rules-detail-table .rules-table-row .rules-table-cell .rule-score-total {
   font-weight: bold;
-  font-size: 18px;
   color: #000000;
 }
 .score-card2 .leo-table .grid-row .rules-detail-container .rules-detail-table .rules-table-row .rules-table-cell .rule-score-incorrect {
@@ -20661,7 +20668,8 @@ div.jsoneditor .jsoneditor-search input{height:auto;border:inherit}div.jsonedito
   font-size: 16px;
 }
 .score-card2 .leo-table .score-label-row .leo-score-label-extra-cell {
-  border: none;
+  border-top: none;
+  border-left: 1px solid #cdcdcd;
   height: 100%;
 }
 .score-card2 .leo-table .score-label-row .leo-score-label-cell {
